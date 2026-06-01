@@ -4,11 +4,11 @@
 
   .c925-landing {
 
-    --c925-bg: #0d0d0d;
+    --c925-bg: #0b0b0b;
 
-    --c925-panel: #171717;
+    --c925-panel: #161616;
 
-    --c925-panel-soft: #222;
+    --c925-panel-soft: #202020;
 
     --c925-text: #f4f1ea;
 
@@ -22,19 +22,45 @@
 
     --c925-max: 1120px;
 
-    background: var(--c925-bg);
+    background: var(--c925-bg) !important;
 
-    color: var(--c925-text);
+    color: var(--c925-text) !important;
 
     font-family: inherit;
 
     line-height: 1.55;
+
+    width: 100%;
+
+    overflow-x: hidden;
 
   }
 
   .c925-landing * {
 
     box-sizing: border-box;
+
+  }
+
+  .c925-landing,
+
+  .c925-landing p,
+
+  .c925-landing h1,
+
+  .c925-landing h2,
+
+  .c925-landing h3,
+
+  .c925-landing h4,
+
+  .c925-landing li,
+
+  .c925-landing span,
+
+  .c925-landing strong {
+
+    color: var(--c925-text) !important;
 
   }
 
@@ -74,7 +100,7 @@
 
     border-radius: 999px;
 
-    color: var(--c925-accent);
+    color: var(--c925-accent) !important;
 
     font-size: 0.82rem;
 
@@ -104,7 +130,7 @@
 
     margin: 0 0 28px;
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
 
     font-size: clamp(1.05rem, 2vw, 1.35rem);
 
@@ -122,7 +148,9 @@
 
   }
 
-  .c925-button {
+  .c925-button,
+
+  .c925-button:visited {
 
     display: inline-flex;
 
@@ -138,13 +166,13 @@
 
     border: 1px solid var(--c925-accent);
 
-    background: var(--c925-accent);
+    background: var(--c925-accent) !important;
 
-    color: var(--c925-accent-dark);
+    color: var(--c925-accent-dark) !important;
 
     font-weight: 700;
 
-    text-decoration: none;
+    text-decoration: none !important;
 
     transition: transform 160ms ease, opacity 160ms ease, background 160ms ease, color 160ms ease;
 
@@ -156,21 +184,31 @@
 
     opacity: 0.9;
 
+    color: var(--c925-accent-dark) !important;
+
   }
 
-  .c925-button.secondary {
+  .c925-button.secondary,
 
-    background: transparent;
+  .c925-button.secondary:visited {
 
-    color: var(--c925-text);
+    background: transparent !important;
 
-    border-color: var(--c925-line);
+    color: var(--c925-text) !important;
+
+    border-color: var(--c925-line) !important;
+
+  }
+
+  .c925-button.secondary:hover {
+
+    background: rgba(244, 241, 234, 0.08) !important;
+
+    color: var(--c925-text) !important;
 
   }
 
   .c925-hero-art {
-
-    position: relative;
 
     display: flex;
 
@@ -246,7 +284,7 @@
 
     margin-bottom: 6px;
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
 
     font-size: 0.78rem;
 
@@ -284,7 +322,7 @@
 
     max-width: 780px;
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
 
     font-size: 1.08rem;
 
@@ -336,7 +374,7 @@
 
     margin: 0;
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
 
   }
 
@@ -368,7 +406,7 @@
 
     flex-direction: column;
 
-    min-height: 340px;
+    min-height: 390px;
 
     border: 1px solid var(--c925-line);
 
@@ -396,7 +434,23 @@
 
     margin: 0 0 10px;
 
-    font-size: 1.45rem;
+    font-size: 1.35rem;
+
+  }
+
+  .c925-tier-label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--c925-accent) !important;
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
 
   }
 
@@ -404,11 +458,21 @@
 
     margin: 0 0 16px;
 
-    color: var(--c925-accent);
+    color: var(--c925-accent) !important;
 
     font-size: 1.9rem;
 
     font-weight: 800;
+
+  }
+
+  .c925-limit {
+
+    margin: -8px 0 16px;
+
+    color: var(--c925-muted) !important;
+
+    font-size: 0.9rem;
 
   }
 
@@ -418,13 +482,15 @@
 
     padding-left: 18px;
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
 
   }
 
   .c925-tier li {
 
     margin-bottom: 8px;
+
+    color: var(--c925-muted) !important;
 
   }
 
@@ -433,6 +499,8 @@
     margin-top: auto;
 
     width: 100%;
+
+    text-align: center;
 
   }
 
@@ -466,13 +534,13 @@
 
     margin-bottom: 6px;
 
-    color: var(--c925-text);
+    color: var(--c925-text) !important;
 
   }
 
   .c925-breakdown-item span {
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
 
   }
 
@@ -526,7 +594,29 @@
 
     margin: 0;
 
-    color: var(--c925-muted);
+    color: var(--c925-muted) !important;
+
+  }
+
+  .c925-notice {
+
+    border: 1px solid var(--c925-line);
+
+    border-radius: 22px;
+
+    background: var(--c925-panel);
+
+    padding: 24px;
+
+    margin-top: 28px;
+
+  }
+
+  .c925-notice p {
+
+    margin: 0;
+
+    color: var(--c925-muted) !important;
 
   }
 
@@ -546,7 +636,21 @@
 
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 980px) {
+
+    .c925-tier-grid,
+
+    .c925-card-grid,
+
+    .c925-breakdown {
+
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+  }
+
+  @media (max-width: 760px) {
 
     .c925-section {
 
@@ -558,9 +662,9 @@
 
     .c925-two-col,
 
-    .c925-card-grid,
-
     .c925-tier-grid,
+
+    .c925-card-grid,
 
     .c925-breakdown {
 
@@ -592,121 +696,35 @@
 
     }
 
+    .c925-tier {
+
+      min-height: auto;
+
+    }
+
   }
-
-/* CIRCUS925 readability override */
-
-.c925-landing,
-
-.c925-landing p,
-
-.c925-landing h1,
-
-.c925-landing h2,
-
-.c925-landing h3,
-
-.c925-landing h4,
-
-.c925-landing li,
-
-.c925-landing span,
-
-.c925-landing strong {
-
-  color: var(--c925-text) !important;
-
-}
-
-.c925-landing .c925-copy,
-
-.c925-landing .c925-card p,
-
-.c925-landing .c925-tier li,
-
-.c925-landing .c925-step p,
-
-.c925-landing .c925-breakdown-item span,
-
-.c925-landing .c925-subtitle,
-
-.c925-landing .c925-meta-label {
-
-  color: var(--c925-muted) !important;
-
-}
-
-.c925-landing .c925-kicker,
-
-.c925-landing .c925-price {
-
-  color: var(--c925-accent) !important;
-
-}
-
-.c925-landing a.c925-button,
-
-.c925-landing a.c925-button:visited {
-
-  color: var(--c925-accent-dark) !important;
-
-  background: var(--c925-accent) !important;
-
-  border-color: var(--c925-accent) !important;
-
-  text-decoration: none !important;
-
-}
-
-.c925-landing a.c925-button.secondary,
-
-.c925-landing a.c925-button.secondary:visited {
-
-  color: var(--c925-text) !important;
-
-  background: transparent !important;
-
-  border-color: var(--c925-line) !important;
-
-}
-
-.c925-landing a.c925-button:hover {
-
-  color: var(--c925-accent-dark) !important;
-
-  opacity: 0.9;
-
-}
-
-.c925-landing a.c925-button.secondary:hover {
-
-  color: var(--c925-text) !important;
-
-  background: rgba(244, 241, 234, 0.08) !important;
-
-}
 
 </style>
 
 <main class="c925-landing">
 
-  <section class="c925-section c925-hero" aria-label="CIRCUS925 First Pressing Campaign">
+  <section class="c925-section c925-hero" aria-label="CIRCUS925 Founding Drop">
 
     <div>
 
-      <span class="c925-kicker">First Pressing Campaign</span>
+      <span class="c925-kicker">First Physical Issue</span>
 
-      <h1 class="c925-title">CIRCUS925</h1>
+      <h1 class="c925-title">CIRCUS925 Founding Drop</h1>
 
       <p class="c925-subtitle">
 
-        A limited vinyl and apparel campaign supporting a new West Coast imprint built around sound, memory, and ideas — by order and chaos.
+        A limited preorder-backed production campaign for CIR000, apparel, cassette editions, archive material, and future physical formats.
 
       </p>
 
       <div class="c925-actions">
 
-        <a class="c925-button" href="#support-options">Support the Campaign</a>
+        <a class="c925-button" href="#support-options">View Supporter Tiers</a>
 
         <a class="c925-button secondary" href="#campaign-story">Read the Story</a>
 
@@ -734,31 +752,31 @@
 
   </section>
 
-  <section class="c925-section" aria-label="Campaign details">
+  <section class="c925-section" aria-label="Campaign summary">
 
     <div class="c925-meta-grid">
 
       <div class="c925-meta-item">
 
-        <span class="c925-meta-label">Format</span>
+        <span class="c925-meta-label">Campaign Goal</span>
 
-        <span class="c925-meta-value">Limited vinyl + apparel</span>
-
-      </div>
-
-      <div class="c925-meta-item">
-
-        <span class="c925-meta-label">Purpose</span>
-
-        <span class="c925-meta-value">Fund the first pressing</span>
+        <span class="c925-meta-value">$5,000</span>
 
       </div>
 
       <div class="c925-meta-item">
 
-        <span class="c925-meta-label">Release Window</span>
+        <span class="c925-meta-label">Model</span>
 
-        <span class="c925-meta-value">Target: late 2026</span>
+        <span class="c925-meta-value">No-debt production</span>
+
+      </div>
+
+      <div class="c925-meta-item">
+
+        <span class="c925-meta-label">Focus</span>
+
+        <span class="c925-meta-value">Vinyl, apparel, cassette, artifacts</span>
 
       </div>
 
@@ -772,7 +790,7 @@
 
       <div>
 
-        <h2 class="c925-section-title">A record label as a moving system.</h2>
+        <h2 class="c925-section-title">A first material cycle.</h2>
 
       </div>
 
@@ -780,13 +798,19 @@
 
         <p class="c925-copy">
 
-          CIRCUS925 begins as a vinyl-first imprint connecting West Coast rhythm, international exchange, and physical music culture. The first pressing campaign helps move the project from concept to object: lacquer, plating, pressing, print, apparel, and the practical costs required to make the release real.
+          CIRCUS925 begins with a focused first physical issue: CIR000, limited apparel, cassette editions, printed matter, archive material, and experimental object research.
 
         </p>
 
         <p class="c925-copy">
 
-          This is not a digital-first drop. It is a physical campaign built for people who still believe records, clothing, flyers, rooms, and sound systems can carry ideas across scenes.
+          This is not a donation campaign. It is a direct exchange between the label and its early supporters. Each tier gives supporters something tangible in return while helping fund the final production stage of the first CIRCUS925 release cycle.
+
+        </p>
+
+        <p class="c925-copy">
+
+          Artist fees, branding, and design have already been paid independently. Campaign proceeds go toward vinyl production, apparel, merch, packaging, fulfillment, payment processing, release support, and selected physical-format research.
 
         </p>
 
@@ -798,31 +822,45 @@
 
   <section class="c925-section">
 
-    <h2 class="c925-section-title">What your support funds</h2>
+    <h2 class="c925-section-title">What funds cover</h2>
 
-    <div class="c925-card-grid">
+    <p class="c925-copy">
 
-      <div class="c925-card">
+      Funds from this campaign support the first CIRCUS925 production cycle: pressing CIR000, producing physical artifacts, launching the first limited apparel run, developing cassette editions, and researching future low-waste packaging and insert concepts.
 
-        <h3>Vinyl production</h3>
+    </p>
 
-        <p>Lacquer cutting, plating, test pressings, labels, jackets, shrink wrap, and the first physical run.</p>
+    <div class="c925-breakdown">
 
-      </div>
+      <div class="c925-breakdown-item">
 
-      <div class="c925-card">
+        <strong>Vinyl</strong>
 
-        <h3>Apparel production</h3>
-
-        <p>Limited CIRCUS925 garments and campaign items designed to help fund the release without relying on debt.</p>
+        <span>Lacquer, plating, pressing, labels, sleeves, freight</span>
 
       </div>
 
-      <div class="c925-card">
+      <div class="c925-breakdown-item">
 
-        <h3>Scene building</h3>
+        <strong>Apparel</strong>
 
-        <p>Release promotion, visual assets, events, shipping preparation, and the infrastructure needed to grow the imprint.</p>
+        <span>First-run CIRCUS925 shirt and wearable objects</span>
+
+      </div>
+
+      <div class="c925-breakdown-item">
+
+        <strong>Artifacts</strong>
+
+        <span>Cassettes, stickers, patches, prints, slipmats, totes</span>
+
+      </div>
+
+      <div class="c925-breakdown-item">
+
+        <strong>Fulfillment</strong>
+
+        <span>Packaging, shipping materials, payment fees, release support</span>
 
       </div>
 
@@ -832,13 +870,13 @@
 
   <section id="support-options" class="c925-section c925-support">
 
-    <span class="c925-kicker">Support Options</span>
+    <span class="c925-kicker">Supporter Tiers</span>
 
-    <h2 class="c925-section-title">Choose your way in.</h2>
+    <h2 class="c925-section-title">Choose your entry into the first CIRCUS925 cycle.</h2>
 
     <p class="c925-copy">
 
-      Start with apparel, reserve the record, or support the full campaign bundle. Update the links below once your WooCommerce products are live.
+      The public campaign ladder moves from low-cost support into physical artifacts, vinyl reservations, collector records, material research, and full supporter editions.
 
     </p>
 
@@ -846,63 +884,291 @@
 
       <article class="c925-tier">
 
-        <h3>Apparel Preorder</h3>
+        <span class="c925-tier-label">Tier 1</span>
 
-        <p class="c925-price">$25–$60</p>
+        <h3>Archive Supporter</h3>
 
-        <ul>
+        <p class="c925-price">$20</p>
 
-          <li>Limited CIRCUS925 shirt or campaign item</li>
-
-          <li>Helps fund production upfront</li>
-
-          <li>Best entry point for early supporters</li>
-
-        </ul>
-
-        <a class="c925-button secondary" href="CHANGE-LINK-APPAREL">Preorder Apparel</a>
-
-      </article>
-
-      <article class="c925-tier featured">
-
-        <h3>First Pressing</h3>
-
-        <p class="c925-price">$20+</p>
+        <p class="c925-limit">Open</p>
 
         <ul>
 
-          <li>Reserve the first CIRCUS925 vinyl release</li>
+          <li>Supporter credit</li>
 
-          <li>Limited physical run</li>
+          <li>Campaign updates</li>
 
-          <li>For DJs, collectors, and direct supporters</li>
+          <li>Private archive download</li>
+
+          <li>Previously vinyl-only track</li>
+
+          <li>Unreleased track</li>
 
         </ul>
 
-        <a class="c925-button" href="CHANGE-LINK-VINYL">Reserve Vinyl</a>
+        <a class="c925-button secondary" href="/product/archive-supporter/">Support at Tier 1</a>
 
       </article>
 
       <article class="c925-tier">
 
-        <h3>Campaign Bundle</h3>
+        <span class="c925-tier-label">Tier 2</span>
 
-        <p class="c925-price">$75+</p>
+        <h3>Tape Dispatch</h3>
+
+        <p class="c925-price">$35</p>
+
+        <p class="c925-limit">Limited</p>
 
         <ul>
 
-          <li>Vinyl + apparel support option</li>
+          <li>First limited CIRCUS925 Tape Dispatch cassette upon completion</li>
 
-          <li>Best for people backing the whole project</li>
+          <li>Private archive download</li>
 
-          <li>Helps cover pressing and production faster</li>
+          <li>Supporter credit</li>
 
         </ul>
 
-        <a class="c925-button secondary" href="CHANGE-LINK-BUNDLE">Support Bundle</a>
+        <a class="c925-button secondary" href="/product/tape-dispatch/">Support at Tier 2</a>
 
       </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 3</span>
+
+        <h3>Sticker / Patch Pack</h3>
+
+        <p class="c925-price">$50</p>
+
+        <p class="c925-limit">Limited</p>
+
+        <ul>
+
+          <li>CIRCUS925 stickers</li>
+
+          <li>Patch</li>
+
+          <li>First cassette mixtape upon completion</li>
+
+          <li>Private archive download</li>
+
+          <li>Supporter credit</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/sticker-patch-pack/">Support at Tier 3</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 4</span>
+
+        <h3>CIRCUS925 Signal Wear — First Run</h3>
+
+        <p class="c925-price">$75</p>
+
+        <p class="c925-limit">Limited first run</p>
+
+        <ul>
+
+          <li>First limited-run CIRCUS925 shirt</li>
+
+          <li>Stickers</li>
+
+          <li>Private archive download</li>
+
+          <li>Supporter credit</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/circus925-signal-wear/">Support at Tier 4</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 5</span>
+
+        <h3>CIR000 Reserved Copy</h3>
+
+        <p class="c925-price">$55</p>
+
+        <p class="c925-limit">Pressing dependent</p>
+
+        <ul>
+
+          <li>Reserved copy of CIR000 upon arrival</li>
+
+          <li>Private archive download</li>
+
+          <li>Supporter credit</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/cir000-reserved-copy/">Reserve CIR000</a>
+
+      </article>
+
+      <article class="c925-tier featured">
+
+        <span class="c925-tier-label">Tier 6 — Featured</span>
+
+        <h3>CIR000 Artifact Bundle</h3>
+
+        <p class="c925-price">$125</p>
+
+        <p class="c925-limit">Limited</p>
+
+        <ul>
+
+          <li>CIR000 reserved copy</li>
+
+          <li>CIRCUS925 shirt</li>
+
+          <li>Stickers and patch</li>
+
+          <li>First Tape Dispatch cassette upon completion</li>
+
+          <li>Private archive download</li>
+
+          <li>Supporter credit</li>
+
+        </ul>
+
+        <a class="c925-button" href="/product/cir000-artifact-bundle/">Support the Main Bundle</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 7</span>
+
+        <h3>CIR000 Full Material Bundle</h3>
+
+        <p class="c925-price">$200</p>
+
+        <p class="c925-limit">Limited</p>
+
+        <ul>
+
+          <li>CIR000 reserved copy</li>
+
+          <li>CIRCUS925 shirt</li>
+
+          <li>Tote bag and slipmat</li>
+
+          <li>Patch and stickers</li>
+
+          <li>CIR000 art print</li>
+
+          <li>First Tape Dispatch cassette</li>
+
+          <li>Private archive downloads</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/cir000-full-material-bundle/">Support at Tier 7</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 8</span>
+
+        <h3>SSS003 + CIR000 Collector</h3>
+
+        <p class="c925-price">$150</p>
+
+        <p class="c925-limit">Limited to 5</p>
+
+        <ul>
+
+          <li>Reserved copy of SSS003 upon arrival</li>
+
+          <li>Reserved copy of CIR000</li>
+
+          <li>Stickers</li>
+
+          <li>Private archive download</li>
+
+          <li>Supporter credit</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/sss003-cir000-collector/">Support at Tier 8</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 9</span>
+
+        <h3>SSS001 + CIR000 Archive Collector</h3>
+
+        <p class="c925-price">$250</p>
+
+        <p class="c925-limit">Limited to 5</p>
+
+        <ul>
+
+          <li>Copy of SSS001 from the label archive</li>
+
+          <li>Reserved copy of CIR000</li>
+
+          <li>CIRCUS925 shirt</li>
+
+          <li>Stickers and patch</li>
+
+          <li>Private archive download</li>
+
+          <li>Supporter credit</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/sss001-cir000-archive-collector/">Support at Tier 9</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <span class="c925-tier-label">Tier 10</span>
+
+        <h3>Mycelium Material Research Edition</h3>
+
+        <p class="c925-price">$225</p>
+
+        <p class="c925-limit">Limited</p>
+
+        <ul>
+
+          <li>CIR000 reserved copy</li>
+
+          <li>Mycelium insert prototype or documented sustainable-material insert</li>
+
+          <li>CIR000 art print</li>
+
+          <li>Material research supporter credit</li>
+
+          <li>Private archive downloads</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="/product/mycelium-material-research-edition/">Support at Tier 10</a>
+
+      </article>
+
+    </div>
+
+    <div class="c925-notice">
+
+      <p>
+
+        A reserved copy means a copy will be allocated from incoming label inventory and shipped once production and delivery are complete. Reserved copies do not ship immediately unless the item is already in hand.
+
+      </p>
 
     </div>
 
@@ -910,45 +1176,55 @@
 
   <section class="c925-section">
 
-    <h2 class="c925-section-title">Funding breakdown</h2>
+    <div class="c925-two-col">
 
-    <p class="c925-copy">
+      <div>
 
-      Campaign funds are directed toward practical production costs first. The goal is to validate demand, keep the project independent, and move into the first pressing without unnecessary debt.
-
-    </p>
-
-    <div class="c925-breakdown">
-
-      <div class="c925-breakdown-item">
-
-        <strong>Pressing</strong>
-
-        <span>Vinyl manufacturing and setup</span>
+        <h2 class="c925-section-title">Higher-level support</h2>
 
       </div>
 
-      <div class="c925-breakdown-item">
+      <div>
 
-        <strong>Print</strong>
+        <p class="c925-copy">
 
-        <span>Labels, jackets, inserts, packaging</span>
+          Consulting, design support, and founding patron options are available by inquiry. These are intentionally limited so the scope remains focused and deliverable.
 
-      </div>
+        </p>
 
-      <div class="c925-breakdown-item">
+        <div class="c925-card-grid">
 
-        <strong>Apparel</strong>
+          <div class="c925-card">
 
-        <span>Garment production and fulfillment</span>
+            <h3>Label / Release Consulting</h3>
 
-      </div>
+            <p>For artists, DJs, small labels, and organizers who need practical help with vinyl release planning, direct preorder strategy, release budgeting, distribution, or label startup structure.</p>
 
-      <div class="c925-breakdown-item">
+          </div>
 
-        <strong>Promotion</strong>
+          <div class="c925-card">
 
-        <span>Assets, campaign material, launch support</span>
+            <h3>Design / Identity Support</h3>
+
+            <p>Limited creative service slots for flyer design, release visuals, logo direction, visual identity feedback, or campaign asset development.</p>
+
+          </div>
+
+          <div class="c925-card">
+
+            <h3>Founding Patron — Archive Transfer</h3>
+
+            <p>A rare top-level supporter option involving the full material bundle, archive/reserved records where available, supporter credit, and one curated record from Mich’s personal collection.</p>
+
+          </div>
+
+        </div>
+
+        <div class="c925-actions">
+
+          <a class="c925-button secondary" href="/contact/">Inquire About Higher-Level Support</a>
+
+        </div>
 
       </div>
 
@@ -970,33 +1246,33 @@
 
         <div class="c925-step">
 
-          <h3>Phase 1 — Campaign launch</h3>
+          <h3>Phase 1 — Campaign preview</h3>
 
-          <p>Open apparel preorders, vinyl reservations, and direct support options.</p>
-
-        </div>
-
-        <div class="c925-step">
-
-          <h3>Phase 2 — Production lock</h3>
-
-          <p>Confirm order volume, finalize artwork, and prepare files for manufacturing.</p>
+          <p>Landing page, supporter tiers, product mockups, and early access list.</p>
 
         </div>
 
         <div class="c925-step">
 
-          <h3>Phase 3 — Pressing and apparel</h3>
+          <h3>Phase 2 — Preorder window</h3>
 
-          <p>Move into vinyl production, apparel production, and fulfillment planning.</p>
+          <p>A focused 14–21 day preorder window to validate demand and determine production scale.</p>
 
         </div>
 
         <div class="c925-step">
 
-          <h3>Phase 4 — Release cycle</h3>
+          <h3>Phase 3 — Production lock</h3>
 
-          <p>Ship campaign orders, announce release events, and build the next chapter of CIRCUS925.</p>
+          <p>Confirm quantities, finalize vinyl production, apparel, artifacts, cassette, and fulfillment materials.</p>
+
+        </div>
+
+        <div class="c925-step">
+
+          <h3>Phase 4 — Fulfillment and documentation</h3>
+
+          <p>Ship supporter orders, document the production process, and use campaign results for future grants, sponsors, lenders, and partners.</p>
 
         </div>
 
@@ -1014,9 +1290,9 @@
 
       <div class="c925-card">
 
-        <h3>Is this a preorder?</h3>
+        <h3>Is this a donation campaign?</h3>
 
-        <p>Yes. The campaign is designed to collect early support before final production and fulfillment.</p>
+        <p>No. This is a preorder-backed production campaign. Every supporter tier includes a direct return: a record, artifact, archive access, apparel, cassette, collector item, or service.</p>
 
       </div>
 
@@ -1024,15 +1300,39 @@
 
         <h3>When will items ship?</h3>
 
-        <p>Shipping timing depends on production lead times. A clearer timeline will be shared after the campaign/order window closes.</p>
+        <p>Some items may ship earlier than others. Reserved records ship once production and delivery are complete. Updates will be shared with campaign supporters.</p>
 
       </div>
 
       <div class="c925-card">
 
-        <h3>Is the record limited?</h3>
+        <h3>What is CIR000?</h3>
 
-        <p>Yes. The first pressing is planned as a limited physical run connected to the launch of CIRCUS925.</p>
+        <p>CIR000 is the first CIRCUS925 physical release cycle and the center of the founding campaign.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>What is Tape Dispatch?</h3>
+
+        <p>Tape Dispatch is a limited cassette mixtape series connected to CIRCUS925 / SSS DJ culture, influences, and archive material.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>What is the private archive download?</h3>
+
+        <p>A private supporter-only transmission of selected archive material. It is not a streaming pivot or full digital release.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>What is the mycelium edition?</h3>
+
+        <p>A limited research-focused edition supporting a dried, finished, non-living biomaterial insert or documented sustainable-material prototype. Final material may vary depending on feasibility.</p>
 
       </div>
 
@@ -1048,13 +1348,13 @@
 
     <p class="c925-copy">
 
-      Support the campaign, reserve the record, or pick up limited apparel. Every order helps move the imprint from idea to object.
+      Support the first CIRCUS925 production cycle through records, apparel, cassettes, printed matter, archive material, and limited physical objects.
 
     </p>
 
     <div class="c925-actions" style="justify-content:center;">
 
-      <a class="c925-button" href="#support-options">Support the Campaign</a>
+      <a class="c925-button" href="#support-options">View Supporter Tiers</a>
 
       <a class="c925-button secondary" href="/">Return to Soft Spoken Secret</a>
 
