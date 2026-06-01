@@ -1,0 +1,1067 @@
+<!-- wp:html -->
+
+<style>
+
+  .c925-landing {
+
+    --c925-bg: #0d0d0d;
+
+    --c925-panel: #171717;
+
+    --c925-panel-soft: #222;
+
+    --c925-text: #f4f1ea;
+
+    --c925-muted: #b8b2a6;
+
+    --c925-line: rgba(244, 241, 234, 0.18);
+
+    --c925-accent: #d7ff3f;
+
+    --c925-accent-dark: #101010;
+
+    --c925-max: 1120px;
+
+    background: var(--c925-bg);
+
+    color: var(--c925-text);
+
+    font-family: inherit;
+
+    line-height: 1.55;
+
+  }
+
+  .c925-landing * {
+
+    box-sizing: border-box;
+
+  }
+
+  .c925-section {
+
+    max-width: var(--c925-max);
+
+    margin: 0 auto;
+
+    padding: 72px 24px;
+
+  }
+
+  .c925-hero {
+
+    min-height: 82vh;
+
+    display: grid;
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 48px;
+
+    align-items: center;
+
+  }
+
+  .c925-kicker {
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 7px 12px;
+
+    border: 1px solid var(--c925-line);
+
+    border-radius: 999px;
+
+    color: var(--c925-accent);
+
+    font-size: 0.82rem;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+  }
+
+  .c925-title {
+
+    margin: 0 0 20px;
+
+    font-size: clamp(2.8rem, 7vw, 6.4rem);
+
+    line-height: 0.92;
+
+    letter-spacing: -0.055em;
+
+    text-transform: uppercase;
+
+  }
+
+  .c925-subtitle {
+
+    max-width: 660px;
+
+    margin: 0 0 28px;
+
+    color: var(--c925-muted);
+
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+
+  }
+
+  .c925-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 28px;
+
+  }
+
+  .c925-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 13px 20px;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--c925-accent);
+
+    background: var(--c925-accent);
+
+    color: var(--c925-accent-dark);
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: transform 160ms ease, opacity 160ms ease, background 160ms ease, color 160ms ease;
+
+  }
+
+  .c925-button:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+
+  }
+
+  .c925-button.secondary {
+
+    background: transparent;
+
+    color: var(--c925-text);
+
+    border-color: var(--c925-line);
+
+  }
+
+  .c925-hero-art {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+  .c925-logo-wrap {
+
+    width: min(100%, 460px);
+
+    aspect-ratio: 1 / 1;
+
+    border: 1px solid var(--c925-line);
+
+    border-radius: 28px;
+
+    background:
+
+      radial-gradient(circle at top left, rgba(215, 255, 63, 0.18), transparent 35%),
+
+      linear-gradient(145deg, #181818, #0b0b0b);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 34px;
+
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+
+  }
+
+  .c925-logo-wrap img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+  }
+
+  .c925-meta-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    border: 1px solid var(--c925-line);
+
+    background: var(--c925-line);
+
+  }
+
+  .c925-meta-item {
+
+    background: var(--c925-panel);
+
+    padding: 22px;
+
+  }
+
+  .c925-meta-label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--c925-muted);
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+  }
+
+  .c925-meta-value {
+
+    display: block;
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+  }
+
+  .c925-section-title {
+
+    margin: 0 0 18px;
+
+    font-size: clamp(2rem, 4vw, 4rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+
+    text-transform: uppercase;
+
+  }
+
+  .c925-copy {
+
+    max-width: 780px;
+
+    color: var(--c925-muted);
+
+    font-size: 1.08rem;
+
+  }
+
+  .c925-two-col {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 42px;
+
+    align-items: start;
+
+  }
+
+  .c925-card-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+  }
+
+  .c925-card {
+
+    border: 1px solid var(--c925-line);
+
+    border-radius: 22px;
+
+    background: var(--c925-panel);
+
+    padding: 24px;
+
+  }
+
+  .c925-card h3 {
+
+    margin: 0 0 12px;
+
+    font-size: 1.25rem;
+
+  }
+
+  .c925-card p {
+
+    margin: 0;
+
+    color: var(--c925-muted);
+
+  }
+
+  .c925-support {
+
+    background:
+
+      linear-gradient(180deg, rgba(215, 255, 63, 0.08), transparent 30%),
+
+      var(--c925-bg);
+
+  }
+
+  .c925-tier-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+  }
+
+  .c925-tier {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 340px;
+
+    border: 1px solid var(--c925-line);
+
+    border-radius: 24px;
+
+    background: var(--c925-panel);
+
+    padding: 26px;
+
+  }
+
+  .c925-tier.featured {
+
+    border-color: var(--c925-accent);
+
+    background:
+
+      radial-gradient(circle at top right, rgba(215, 255, 63, 0.14), transparent 30%),
+
+      var(--c925-panel);
+
+  }
+
+  .c925-tier h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 1.45rem;
+
+  }
+
+  .c925-price {
+
+    margin: 0 0 16px;
+
+    color: var(--c925-accent);
+
+    font-size: 1.9rem;
+
+    font-weight: 800;
+
+  }
+
+  .c925-tier ul {
+
+    margin: 0 0 24px;
+
+    padding-left: 18px;
+
+    color: var(--c925-muted);
+
+  }
+
+  .c925-tier li {
+
+    margin-bottom: 8px;
+
+  }
+
+  .c925-tier .c925-button {
+
+    margin-top: auto;
+
+    width: 100%;
+
+  }
+
+  .c925-breakdown {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    margin-top: 28px;
+
+  }
+
+  .c925-breakdown-item {
+
+    border: 1px solid var(--c925-line);
+
+    border-radius: 18px;
+
+    background: var(--c925-panel-soft);
+
+    padding: 20px;
+
+  }
+
+  .c925-breakdown-item strong {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--c925-text);
+
+  }
+
+  .c925-breakdown-item span {
+
+    color: var(--c925-muted);
+
+  }
+
+  .c925-timeline {
+
+    border-left: 1px solid var(--c925-line);
+
+    margin-top: 28px;
+
+    padding-left: 24px;
+
+  }
+
+  .c925-step {
+
+    position: relative;
+
+    padding: 0 0 26px;
+
+  }
+
+  .c925-step::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -30px;
+
+    top: 6px;
+
+    width: 11px;
+
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: var(--c925-accent);
+
+  }
+
+  .c925-step h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 1.15rem;
+
+  }
+
+  .c925-step p {
+
+    margin: 0;
+
+    color: var(--c925-muted);
+
+  }
+
+  .c925-final-cta {
+
+    text-align: center;
+
+    border-top: 1px solid var(--c925-line);
+
+  }
+
+  .c925-final-cta .c925-copy {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+  }
+
+  @media (max-width: 860px) {
+
+    .c925-section {
+
+      padding: 56px 18px;
+
+    }
+
+    .c925-hero,
+
+    .c925-two-col,
+
+    .c925-card-grid,
+
+    .c925-tier-grid,
+
+    .c925-breakdown {
+
+      grid-template-columns: 1fr;
+
+    }
+
+    .c925-hero {
+
+      min-height: auto;
+
+      gap: 34px;
+
+    }
+
+    .c925-meta-grid {
+
+      grid-template-columns: 1fr;
+
+    }
+
+    .c925-logo-wrap {
+
+      max-width: 360px;
+
+      margin: 0 auto;
+
+      border-radius: 22px;
+
+    }
+
+  }
+
+/* CIRCUS925 readability override */
+
+.c925-landing,
+
+.c925-landing p,
+
+.c925-landing h1,
+
+.c925-landing h2,
+
+.c925-landing h3,
+
+.c925-landing h4,
+
+.c925-landing li,
+
+.c925-landing span,
+
+.c925-landing strong {
+
+  color: var(--c925-text) !important;
+
+}
+
+.c925-landing .c925-copy,
+
+.c925-landing .c925-card p,
+
+.c925-landing .c925-tier li,
+
+.c925-landing .c925-step p,
+
+.c925-landing .c925-breakdown-item span,
+
+.c925-landing .c925-subtitle,
+
+.c925-landing .c925-meta-label {
+
+  color: var(--c925-muted) !important;
+
+}
+
+.c925-landing .c925-kicker,
+
+.c925-landing .c925-price {
+
+  color: var(--c925-accent) !important;
+
+}
+
+.c925-landing a.c925-button,
+
+.c925-landing a.c925-button:visited {
+
+  color: var(--c925-accent-dark) !important;
+
+  background: var(--c925-accent) !important;
+
+  border-color: var(--c925-accent) !important;
+
+  text-decoration: none !important;
+
+}
+
+.c925-landing a.c925-button.secondary,
+
+.c925-landing a.c925-button.secondary:visited {
+
+  color: var(--c925-text) !important;
+
+  background: transparent !important;
+
+  border-color: var(--c925-line) !important;
+
+}
+
+.c925-landing a.c925-button:hover {
+
+  color: var(--c925-accent-dark) !important;
+
+  opacity: 0.9;
+
+}
+
+.c925-landing a.c925-button.secondary:hover {
+
+  color: var(--c925-text) !important;
+
+  background: rgba(244, 241, 234, 0.08) !important;
+
+}
+
+</style>
+
+<main class="c925-landing">
+
+  <section class="c925-section c925-hero" aria-label="CIRCUS925 First Pressing Campaign">
+
+    <div>
+
+      <span class="c925-kicker">First Pressing Campaign</span>
+
+      <h1 class="c925-title">CIRCUS925</h1>
+
+      <p class="c925-subtitle">
+
+        A limited vinyl and apparel campaign supporting a new West Coast imprint built around sound, memory, and ideas — by order and chaos.
+
+      </p>
+
+      <div class="c925-actions">
+
+        <a class="c925-button" href="#support-options">Support the Campaign</a>
+
+        <a class="c925-button secondary" href="#campaign-story">Read the Story</a>
+
+      </div>
+
+    </div>
+
+    <div class="c925-hero-art">
+
+      <div class="c925-logo-wrap">
+
+        <img
+
+          src="https://softspokensecret.com/wp-content/uploads/2026/06/circus925_logo_centered_even-4-1024x1024.png"
+
+          alt="CIRCUS925 logo"
+
+          loading="eager"
+
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="c925-section" aria-label="Campaign details">
+
+    <div class="c925-meta-grid">
+
+      <div class="c925-meta-item">
+
+        <span class="c925-meta-label">Format</span>
+
+        <span class="c925-meta-value">Limited vinyl + apparel</span>
+
+      </div>
+
+      <div class="c925-meta-item">
+
+        <span class="c925-meta-label">Purpose</span>
+
+        <span class="c925-meta-value">Fund the first pressing</span>
+
+      </div>
+
+      <div class="c925-meta-item">
+
+        <span class="c925-meta-label">Release Window</span>
+
+        <span class="c925-meta-value">Target: late 2026</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="campaign-story" class="c925-section">
+
+    <div class="c925-two-col">
+
+      <div>
+
+        <h2 class="c925-section-title">A record label as a moving system.</h2>
+
+      </div>
+
+      <div>
+
+        <p class="c925-copy">
+
+          CIRCUS925 begins as a vinyl-first imprint connecting West Coast rhythm, international exchange, and physical music culture. The first pressing campaign helps move the project from concept to object: lacquer, plating, pressing, print, apparel, and the practical costs required to make the release real.
+
+        </p>
+
+        <p class="c925-copy">
+
+          This is not a digital-first drop. It is a physical campaign built for people who still believe records, clothing, flyers, rooms, and sound systems can carry ideas across scenes.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="c925-section">
+
+    <h2 class="c925-section-title">What your support funds</h2>
+
+    <div class="c925-card-grid">
+
+      <div class="c925-card">
+
+        <h3>Vinyl production</h3>
+
+        <p>Lacquer cutting, plating, test pressings, labels, jackets, shrink wrap, and the first physical run.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>Apparel production</h3>
+
+        <p>Limited CIRCUS925 garments and campaign items designed to help fund the release without relying on debt.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>Scene building</h3>
+
+        <p>Release promotion, visual assets, events, shipping preparation, and the infrastructure needed to grow the imprint.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="support-options" class="c925-section c925-support">
+
+    <span class="c925-kicker">Support Options</span>
+
+    <h2 class="c925-section-title">Choose your way in.</h2>
+
+    <p class="c925-copy">
+
+      Start with apparel, reserve the record, or support the full campaign bundle. Update the links below once your WooCommerce products are live.
+
+    </p>
+
+    <div class="c925-tier-grid">
+
+      <article class="c925-tier">
+
+        <h3>Apparel Preorder</h3>
+
+        <p class="c925-price">$25–$60</p>
+
+        <ul>
+
+          <li>Limited CIRCUS925 shirt or campaign item</li>
+
+          <li>Helps fund production upfront</li>
+
+          <li>Best entry point for early supporters</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="CHANGE-LINK-APPAREL">Preorder Apparel</a>
+
+      </article>
+
+      <article class="c925-tier featured">
+
+        <h3>First Pressing</h3>
+
+        <p class="c925-price">$20+</p>
+
+        <ul>
+
+          <li>Reserve the first CIRCUS925 vinyl release</li>
+
+          <li>Limited physical run</li>
+
+          <li>For DJs, collectors, and direct supporters</li>
+
+        </ul>
+
+        <a class="c925-button" href="CHANGE-LINK-VINYL">Reserve Vinyl</a>
+
+      </article>
+
+      <article class="c925-tier">
+
+        <h3>Campaign Bundle</h3>
+
+        <p class="c925-price">$75+</p>
+
+        <ul>
+
+          <li>Vinyl + apparel support option</li>
+
+          <li>Best for people backing the whole project</li>
+
+          <li>Helps cover pressing and production faster</li>
+
+        </ul>
+
+        <a class="c925-button secondary" href="CHANGE-LINK-BUNDLE">Support Bundle</a>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <section class="c925-section">
+
+    <h2 class="c925-section-title">Funding breakdown</h2>
+
+    <p class="c925-copy">
+
+      Campaign funds are directed toward practical production costs first. The goal is to validate demand, keep the project independent, and move into the first pressing without unnecessary debt.
+
+    </p>
+
+    <div class="c925-breakdown">
+
+      <div class="c925-breakdown-item">
+
+        <strong>Pressing</strong>
+
+        <span>Vinyl manufacturing and setup</span>
+
+      </div>
+
+      <div class="c925-breakdown-item">
+
+        <strong>Print</strong>
+
+        <span>Labels, jackets, inserts, packaging</span>
+
+      </div>
+
+      <div class="c925-breakdown-item">
+
+        <strong>Apparel</strong>
+
+        <span>Garment production and fulfillment</span>
+
+      </div>
+
+      <div class="c925-breakdown-item">
+
+        <strong>Promotion</strong>
+
+        <span>Assets, campaign material, launch support</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="c925-section">
+
+    <div class="c925-two-col">
+
+      <div>
+
+        <h2 class="c925-section-title">Campaign roadmap</h2>
+
+      </div>
+
+      <div class="c925-timeline">
+
+        <div class="c925-step">
+
+          <h3>Phase 1 — Campaign launch</h3>
+
+          <p>Open apparel preorders, vinyl reservations, and direct support options.</p>
+
+        </div>
+
+        <div class="c925-step">
+
+          <h3>Phase 2 — Production lock</h3>
+
+          <p>Confirm order volume, finalize artwork, and prepare files for manufacturing.</p>
+
+        </div>
+
+        <div class="c925-step">
+
+          <h3>Phase 3 — Pressing and apparel</h3>
+
+          <p>Move into vinyl production, apparel production, and fulfillment planning.</p>
+
+        </div>
+
+        <div class="c925-step">
+
+          <h3>Phase 4 — Release cycle</h3>
+
+          <p>Ship campaign orders, announce release events, and build the next chapter of CIRCUS925.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="c925-section">
+
+    <h2 class="c925-section-title">FAQ</h2>
+
+    <div class="c925-card-grid">
+
+      <div class="c925-card">
+
+        <h3>Is this a preorder?</h3>
+
+        <p>Yes. The campaign is designed to collect early support before final production and fulfillment.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>When will items ship?</h3>
+
+        <p>Shipping timing depends on production lead times. A clearer timeline will be shared after the campaign/order window closes.</p>
+
+      </div>
+
+      <div class="c925-card">
+
+        <h3>Is the record limited?</h3>
+
+        <p>Yes. The first pressing is planned as a limited physical run connected to the launch of CIRCUS925.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="c925-section c925-final-cta">
+
+    <span class="c925-kicker">First pressing starts here</span>
+
+    <h2 class="c925-section-title">Help bring CIRCUS925 into physical form.</h2>
+
+    <p class="c925-copy">
+
+      Support the campaign, reserve the record, or pick up limited apparel. Every order helps move the imprint from idea to object.
+
+    </p>
+
+    <div class="c925-actions" style="justify-content:center;">
+
+      <a class="c925-button" href="#support-options">Support the Campaign</a>
+
+      <a class="c925-button secondary" href="/">Return to Soft Spoken Secret</a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- /wp:html -->
